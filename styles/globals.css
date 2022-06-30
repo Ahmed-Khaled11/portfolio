@@ -121,6 +121,7 @@
   font-size: 18px;
   display: flex;
   align-items: center;
+  font-weight: 500;
   }
   .navbar-nav a:hover{
   color: var(--main-color) !important;
@@ -156,15 +157,7 @@
   background-color:var(--section-color)!important ;
   }
   header{
-  height: calc(100vh - 75px);
-  }
- 
-  header .image{
-  transition: 0.6s;
-  }
-  header :hover .image{
-    transform:scale(1.06) ;
-    
+  min-height: calc(100vh - 75px);
   }
   header .text h1{
   font-weight: 700;
@@ -172,14 +165,10 @@
   }
   @media (max-width:380px) {
   header img{
-  margin-top: 25px !important;
+  padding-top: 25px !important;
   padding: 25px !important;
   width: 250px !important;
   height: 250px !important;
-  }
-  header{
-  height: calc(100vh + 81px );
-
   }
   }
   @media (max-width:767px) {

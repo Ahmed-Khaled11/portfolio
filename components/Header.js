@@ -87,7 +87,6 @@ import Aos from 'aos'
                 </Nav.Link>
               </div>
             </div>
-            <div className="image  mt-3 mt-md-0 mb-5 mb-md-0">
               <Image
                 src={header}
                 width="450"
@@ -97,7 +96,6 @@ import Aos from 'aos'
                 className="fluid rounded-circle"
               />
             </div>
-          </div>
         </Container>
       </header>
     </>

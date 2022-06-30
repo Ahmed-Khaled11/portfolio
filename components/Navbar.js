@@ -19,7 +19,6 @@ const darkMode = (e) => {
     links.forEach((w) => w.classList.remove("active"));
     e.target.classList.toggle('active')
   }
-  console.log('navbar')
   return (
     <>
       <Head>
