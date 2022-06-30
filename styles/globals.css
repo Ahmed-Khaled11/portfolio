@@ -20,7 +20,7 @@
   * {
   box-sizing: border-box;
   }
-  button{
+  button , input, a{
   box-shadow: none !important;
   }
   /* dark mode  */
@@ -54,6 +54,12 @@
   .dark header{
   background-color: var(--dark-mode)
   }
+  .dark header .btn-cv{
+    border :1px solid #fff;
+  } 
+  .dark header .btn-cv:hover{
+  color: #fff !important; 
+ } 
   .dark header .text{
   color: #fff;
   }
@@ -198,7 +204,16 @@
   background-color: var(--main-color);
   color: #fff !important;
   transition: 0.3s;
-
+    
+  }
+  header .btn-cv{
+    background-color: var(--dark-mode);
+    color: #fff !important;
+    transition: 0.3s;
+  }
+  header .btn-cv:hover{
+    color: var(--dark-mode) !important;
+    background-color:transparent !important;
   }
   header .btn-portfolio:hover{
   color: var(--main-color) !important;

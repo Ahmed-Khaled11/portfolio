@@ -43,18 +43,25 @@ import Aos from 'aos'
                   Html, css, js, react , next.js , react-bootstrap{" "}
                 </span>{" "}
               </p>
-              <div className="d-flex ">
+              <div className="d-flex align-items-center flex-column flex-md-row">
                 <Link href="/portfolio">
                   <Nav.Link
-                    className="btn btn-portfolio rounded d-flex align-items-center mb-3 text-white"
+                    className="btn btn-portfolio rounded text-nowrap d-flex align-items-center mb-3 text-white"
                     href="/portfolio"
                   >
-                    explore my portfolio <Globe className="fs-4 ps-1" />
+                    explore my portfolio <Globe className="fs-3 ps-1" />
                   </Nav.Link>
                 </Link>
-                <button className="btn btn-portfolio rounded text-uppercase fw-bold  d-flex align-items-center mb-3 ms-3 text-white">
-                  download cv <Clock className="fs-3 ps-2" />
-                </button>
+                <Link href="/">
+                  <Nav.Link
+                    className="btn btn-cv rounded text-nowrap d-flex align-items-center ms-0 ms-md-3 mb-3 text-white"
+                    href="/"
+                  >
+                    download cv <Clock className="fs-3 ps-1" />
+                  </Nav.Link>
+                </Link>
+
+
               </div>
               <div className="icons d-flex justify-content-between justify-content-md-start">
                 <Nav.Link
@@ -87,15 +94,15 @@ import Aos from 'aos'
                 </Nav.Link>
               </div>
             </div>
-              <Image
-                src={header}
-                width="450"
-                height="450"
-                alt="header"
-                data-aos="fade-down"
-                className="fluid rounded-circle"
-              />
-            </div>
+            <Image
+              src={header}
+              width="450"
+              height="450"
+              alt="header"
+              data-aos="fade-down"
+              className="fluid rounded-circle"
+            />
+          </div>
         </Container>
       </header>
     </>
