@@ -29,10 +29,21 @@ export default function About() {
             data-aos="zoom-in"
           >
             <h2 className="fw-bold text-uppercase">hi i'm ahmed khaled</h2>
-            <h4 className="fw-bold text-uppercase">i'm 23 years old</h4>
+            <h4 className="fw-bold text-capitalize">
+              i'm 23 years old <br /> i'm from giza, egypt <br />
+              email:
+              <br />{" "}
+              <span className="fs-5 fw-normal">ahmedboboos4@gmail.com</span>
+              <br />
+              phone number:
+              <br />
+              <span className="fs-5 fw-normal">01068386346</span>
+              <br />
+            </h4>
+            <p></p>
+
             <ul className="text-capitalize p-2">
-              <li>developed Front-End websites</li>
-              <li>technology i using is : </li>
+              <li>technology i using : </li>
               <li>redux-toolkit</li>
               <li>bootstrap</li>
               <li>react JS</li>

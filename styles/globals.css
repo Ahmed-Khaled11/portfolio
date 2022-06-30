@@ -330,7 +330,8 @@
   background-color: var(--section-color);
   }
   .about .text{
-  clip-path: polygon(0 100%, 0 0, 100% 0);background-color: var(--main-color);
+  clip-path: polygon(0% 0%, 55% 0, 100% 0%, 17% 100%, 0% 100%);
+  background-color:#9c1515;
   padding: 20px;
   }
   @media (max-width:991px) {
