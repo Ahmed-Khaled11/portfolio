@@ -27,6 +27,7 @@ export default function Portfolio() {
       <Head>
         <title>My Portfolio</title>
         <meta name="description" content="My Portfolio Page" />
+        <link rel="icon" href="/public/images/icon.png" />
       </Head>
       <section className="portfolio py-5">
         <Container>
@@ -90,7 +91,7 @@ export default function Portfolio() {
                     target="_blank"
                     className="title btn rounded shadow-none text-uppercase d-flex align-items-center"
                   >
-                    Live Preview <Eye className='ps-1 fs-4'/>
+                    Live Preview <Eye className="ps-1 fs-4" />
                   </Nav.Link>
                 </div>
               </div>

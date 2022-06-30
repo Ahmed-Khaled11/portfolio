@@ -40,7 +40,7 @@ export default function About() {
             </ul>
           </div>
           <div className="img col-md-6" data-aos="fade-down">
-            <Image fluid src={aboutImg} />
+            <Image src={aboutImg} />
           </div>
         </Container>
       </section>

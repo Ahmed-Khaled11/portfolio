@@ -8,16 +8,18 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import { MoonFill, Search } from "react-bootstrap-icons";
 import Link from 'next/link'
 import { Container, Nav, Navbar, NavItem } from "react-bootstrap";
+import React, { memo } from "react";
+
 const darkMode = (e) => {
   document.body.className === '' ? document.body.className = 'dark' : document.body.className = ""
-
 }
-export default function NavBar() {
+ const NavBar = () => {
   const removeClassActive = (e) => {
     const links = document.querySelectorAll(".navbar-nav a");
     links.forEach((w) => w.classList.remove("active"));
     e.target.classList.toggle('active')
   }
+  console.log('navbar')
   return (
     <>
       <Head>
@@ -42,11 +44,10 @@ export default function NavBar() {
                 </Nav.Link>
               </Link>
               <Nav className="links d-flex flex-row text-uppercase">
-                <Link href="home">
+                <Link href="/">
                   <a
                     className="ms-4 active"
                     onClick={(e) => removeClassActive(e)}
-                    href="home"
                   >
                     Home
                   </a>
@@ -145,3 +146,4 @@ export default function NavBar() {
     </>
   );
 }
+export default memo(NavBar);
