@@ -1,220 +1,250 @@
-:root{
+  :root{
   --main-color:#e84855;
   --section-color:#f6f6f6;
   --dark-mode: #23272A;
-}
-.main-color{
+  }
+  .main-color{
   color:var(--main-color) !important
-}
+  }
 
-html,
-body {
+  html,
+  body {
   padding: 0;
   margin: 0;
   font-family: 'Exo 2', sans-serif !important;}
 
-a {
+  a {
   color: inherit;
   text-decoration: none;
-}
-* {
+  }
+  * {
   box-sizing: border-box;
-}
-button{
+  }
+  button{
   box-shadow: none !important;
-}
-/* dark mode  */
-/* dark mode for navbar  */
+  }
+  /* dark mode  */
+  /* dark mode for navbar  */
   .dark .navbar{
-    background-color: var(--dark-mode) !important;
+  background-color: var(--dark-mode) !important;
   }
   .dark .logo{
-    color: #fff;
+  color: #fff;
   }
   .dark .nav-link{
-    color: #fff !important;
+  color: #fff !important;
+  }
+  .dark .links a{
+  color: #fff ;
   }
   .dark .dark{
-    color: #fff;
+  color: #fff;
   }
   .dark .navbar-toggler{
-    background-color: #fff;
+  background-color: #fff;
   }
   .dark .offcanvas {
-    background-color: var(--dark-mode);
+  background-color: var(--dark-mode);
   }
   .dark .btn-close {
-    background-color: #fff !important;
+  background-color: #fff !important;
   }
-/* dark mode for navbar  */
-/* dark mode for header  */
-.dark header{
+  /* dark mode for navbar  */
+  /* dark mode for header  */
+  .dark header{
   background-color: var(--dark-mode)
-}
-.dark header .text{
+  }
+  .dark header .text{
   color: #fff;
-}
-/* dark mode for header  */
-/* dark mode for portfolio */
-.dark .portfolio {
+  }
+  /* dark mode for header  */
+  /* dark mode for portfolio */
+  .dark .portfolio {
   background-color: var(--dark-mode);
-}
-.dark .portfolio .all-projects button{
+  }
+  .dark .portfolio .all-projects button{
   color: #fff !important;
-}
-.dark .portfolio .all-projects button.active{
+  }
+  .dark .portfolio .all-projects button.active{
   color: var(--main-color) !important;
-}
-.dark .portfolio .section-title h2 {
-color: #fff ;
-}
-.dark .portfolio .section-title h2::after {
+  }
+  .dark .portfolio .section-title h2 {
+  color: #fff ;
+  }
+  .dark .portfolio .section-title h2::after {
   background-color: #fff ;
-}
+  }
 
-/* dark mode for portfolio */
-/* dark mode for about  */
-.dark .about{
+  /* dark mode for portfolio */
+  /* dark mode for about  */
+  .dark .about{
   background-color: var(--dark-mode);
   color: #fff !important;
-}
-.dark .about .section-title h2::after{
+  }
+  .dark .about .section-title h2::after{
   background-color: #fff ;
-}
-.dark .about .section-title:hover h2::after{
+  }
+  .dark .about .section-title:hover h2::after{
   background-color: var(--main-color) ;
-}
-.dark .about .text{
+  }
+  .dark .about .text{
   background-color: #7b1111 !important;
-}
-/* dark mode for about  */
-/* dark mode  */
-/* navbar */
-.navbar{
-      box-shadow:0 10px 15px rgb(25 25 25 / 10%);
-      flex-wrap: nowrap;
-}
+  }
+  /* dark mode for about  */
+  /* dark mode  */
+  /* navbar */
+  .navbar{
+  box-shadow:0 10px 15px rgb(25 25 25 / 10%);
+  flex-wrap: nowrap;
+  }
   .logo{
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px black;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px black;
   }
   .dark .logo:hover{
-    color:#fff ;
+  color:#fff ;
   }
   .logo>span {
-    color: var(--main-color);
+  color: var(--main-color);
   }
-   .nav-link{
-    font-size: 18px;
-    color: #222 !important;
-    font-weight: 600;;
-    letter-spacing: 1.6; 
+  .nav-link{
+  font-size: 18px;
+  color: #222 !important;
+  font-weight: 600;;
+  letter-spacing: 1.6; 
   }
+
   .links a{
-    transition: 0.3s;
+  transition: 0.3s;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
   }
   .navbar-nav a:hover{
-    color: var(--main-color) !important;
+  color: var(--main-color) !important;
   }
   .links a:hover,
   .navbar-nav a:hover{
-    color: var(--main-color) !important;
+  color: var(--main-color) !important;
   }
-  .links .active {
-    color: var(--main-color) !important;
+  .nav .active,
+  .navbar-nav .active {
+  color: var(--main-color) !important;
   }
   @media (max-width:991px) {
-    .links a{
-          display: none !important;
-    }
+  .links a{
+  display: none !important;
   }
-    .search button{
-      background-color: var(--main-color);
-      font-size: 20px;
-      
-    }
-    .search button:hover{
-      color:#fff !important;
-      background-color: #cf0516 !important;
-    }
-    .form-control:focus{
-      border: 1px solid var(--main-color) !important;
-    }
-/* navbar */
-/* header  */
-.header{
-  background-color:var(--section-color)!important ;
+  }
+  .search button{
+  background-color: var(--main-color);
+  font-size: 20px;
 
-}
-header{
+  }
+  .search button:hover{
+  color:#fff !important;
+  background-color: #cf0516 !important;
+  }
+  .form-control:focus{
+  border: 1px solid var(--main-color) !important;
+  }
+  /* navbar */
+  /* header  */
+  .header{
+  background-color:var(--section-color)!important ;
+  }
+  header{
   height: calc(100vh - 75px);
-}
-header .text h1{
+  }
+ 
+  header .image{
+  transition: 0.6s;
+  }
+  header :hover .image{
+    transform:scale(1.06) ;
+    
+  }
+  header .text h1{
   font-weight: 700;
   text-shadow: 2px 1px 1px black;
-}
-@media (max-width:767px) {
+  }
+  @media (max-width:380px) {
+  header img{
+  margin-top: 25px !important;
+  padding: 25px !important;
+  width: 250px !important;
+  height: 250px !important;
+  }
+  header{
+  height: calc(100vh + 81px );
+
+  }
+  }
+  @media (max-width:767px) {
   header .image{
-    margin-top: 10px;
-    width: 250px;
-    height: 250px;
+  margin-top: 10px;
+  width: 350px;
+  height: 350px;
+  }
+  header img{
+  padding: 20px !important ;
   }
   header .image>span{
-    margin-top:15px !important;
+  margin-top:15px !important;
   }
-  
-}
-@media (max-width:767px) {
+
+  }
+  @media (max-width:767px) {
   header .text h1 {
-      font-size: 2rem;
-    }
-}
-header .text span{
+  font-size: 2rem;
+  }
+  }
+  header .text span{
   color: var(--main-color);
-}
-header .btn-portfolio{
+  }
+  header .btn-portfolio{
   width: fit-content;
   background-color: var(--main-color);
   color: #fff !important;
   transition: 0.3s;
 
-}
-header .btn-portfolio:hover{
+  }
+  header .btn-portfolio:hover{
   color: var(--main-color) !important;
   background-color: #fff var(--section-color);
-}
- .facebook , .twitter, .instagram, .github{
+  }
+  .facebook , .twitter, .instagram, .github{
   transition: 0.3s;
- }
- header .icons{
+  }
+  header .icons{
   margin-left: -15px;
- }
-header .icons .facebook:hover{
+  }
+  header .icons .facebook:hover{
   color: #4267B2 !important;
-}
-header .icons .twitter:hover{
+  }
+  header .icons .twitter:hover{
   color: #00acee !important;
-}
-header .icons .instagram:hover{
+  }
+  header .icons .instagram:hover{
   color: #E1306C !important;
-}
-header .icons .github:hover{
+  }
+  header .icons .github:hover{
   color: #171515 !important;
-}
-/* header  */
-/* portfolio */
-.portfolio {
+  }
+  /* header  */
+  /* portfolio */
+  .portfolio {
   min-height: calc(100vh - 80px);
-}
- .section-title p{
+  }
+  .section-title p{
   color: var(--main-color);
-}
- .section-title h2{
+  }
+  .section-title h2{
   position: relative;
-}
- .section-title h2::after{
+  }
+  .section-title h2::after{
   content: '';
   position: absolute;
   width: 10%;
@@ -223,37 +253,37 @@ header .icons .github:hover{
   background-color: var(--dark-mode);
   bottom: -2rem;
   transition: 0.3s;
-}
- .section-title:hover h2::after{
+  }
+  .section-title:hover h2::after{
   width: 15%;
   background-color: var(--main-color);
-}
-.portfolio .all-projects{
+  }
+  .portfolio .all-projects{
   flex-wrap: wrap;
-}
-.portfolio .all-projects button{
-background-color: transparent !important;
-color: black !important;
-border: none !important;
-border-radius: 0;
-white-space: nowrap;
-transition: 0.3s;
-}
-.portfolio .all-projects button:hover{
+  }
+  .portfolio .all-projects button{
+  background-color: transparent !important;
+  color: black !important;
+  border: none !important;
+  border-radius: 0;
+  white-space: nowrap;
+  transition: 0.3s;
+  }
+  .portfolio .all-projects button:hover{
   color: var(--main-color) !important;
-}
-.all-projects button.active{
+  }
+  .all-projects button.active{
   color: var(--main-color) !important;
   border-bottom: 2px solid var(--main-color) !important;
-}
-.portfolio .box{
+  }
+  .portfolio .box{
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   cursor: pointer;
-    }
+  }
   .portfolio .box img{
   object-fit: cover;
   filter: blur(0x);
@@ -265,16 +295,16 @@ transition: 0.3s;
   .portfolio .box img{
   border-radius: 10px;
   }
-    .portfolio .box .theTitle{
-    position: absolute;
-    top:-40px;
-    background-color:#d6434fb7;
-    border-radius: 6px;
-    transition: 0.3s;
-    }
-    .portfolio .box:hover .theTitle{
-      top: 0%;
-    }
+  .portfolio .box .theTitle{
+  position: absolute;
+  top:-40px;
+  background-color:#d6434fb7;
+  border-radius: 6px;
+  transition: 0.3s;
+  }
+  .portfolio .box:hover .theTitle{
+  top: 0%;
+  }
   .portfolio .box .title{
   position: absolute;
   background-color: var(--main-color);
@@ -282,46 +312,46 @@ transition: 0.3s;
   transition: 0.3s;
   bottom: -100px ; 
   }
-    .portfolio .box:hover .title{
-      bottom: 40%;
-    }
+  .portfolio .box:hover .title{
+  bottom: 40%;
+  }
   .portfolio .box .title:hover{
   background-color: #d13945;
   }
-/* portfolio */
-/* About me  */
+  /* portfolio */
+  /* About me  */
 
-.about{
+  .about{
   min-height: 100vh;
   background-color: var(--section-color);
-}
-.about .text{
+  }
+  .about .text{
   clip-path: polygon(0 100%, 0 0, 100% 0);background-color: var(--main-color);
   padding: 20px;
-}
-@media (max-width:991px) {
+  }
+  @media (max-width:991px) {
   .about .text {
   clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
   border-radius: 14px;
   margin-right: 14px;
   padding: 40px;
-}
-}
-@media (max-width:991px) {
+  }
+  }
+  @media (max-width:991px) {
   .about .about-content {
   align-items: center ;
-}
-}
-@media (max-width:767px) {
+  }
+  }
+  @media (max-width:767px) {
   .about .text h2,
   .about .text p{
-      font-size: 16px !important;
-    }
-}
-.about .text p{
+  font-size: 16px !important;
+  }
+  }
+  .about .text p{
   font-weight: 600;
-}
-.about .img img{
+  }
+  .about .img img{
   border-radius: 50%;
-}
-/* About me  */
+  }
+  /* About me  */

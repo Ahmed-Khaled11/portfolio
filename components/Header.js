@@ -10,7 +10,7 @@ import {
   Clock,
 } from "react-bootstrap-icons";
 import Image from "next/image";
-import header from '../public/images/header.webp'
+import header from '../public/images/about.jpg'
 import Link from "next/link";
 import Aos from 'aos'
   export default function Header() {
@@ -87,13 +87,14 @@ import Aos from 'aos'
                 </Nav.Link>
               </div>
             </div>
-            <div className="image fluid mt-3 mt-md-0">
+            <div className="image  mt-3 mt-md-0 mb-5 mb-md-0">
               <Image
                 src={header}
-                width="500"
-                height="500"
+                width="450"
+                height="450"
                 alt="header"
                 data-aos="fade-down"
+                className="fluid rounded-circle"
               />
             </div>
           </div>

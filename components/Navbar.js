@@ -7,12 +7,17 @@ import Form from "react-bootstrap/Form";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { MoonFill, Search } from "react-bootstrap-icons";
 import Link from 'next/link'
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, NavItem } from "react-bootstrap";
 const darkMode = (e) => {
   document.body.className === '' ? document.body.className = 'dark' : document.body.className = ""
 
 }
 export default function NavBar() {
+  const removeClassActive = (e) => {
+    const links = document.querySelectorAll(".navbar-nav a");
+    links.forEach((w) => w.classList.remove("active"));
+    e.target.classList.toggle('active')
+  }
   return (
     <>
       <Head>
@@ -28,7 +33,7 @@ export default function NavBar() {
             expand={expand}
             className="navbar py-3 "
           >
-            <Container className="jusify-content-betwwen ps-0">
+            <Container className="nav jusify-content-betwwen ps-0">
               <Link href="/">
                 <Nav.Link href="/">
                   <Navbar.Brand className="logo fs-3 fs-md-3 ">
@@ -38,27 +43,47 @@ export default function NavBar() {
               </Link>
               <Nav className="links d-flex flex-row text-uppercase">
                 <Link href="home">
-                  <Nav.Link className="active ms-4" href="home">
+                  <a
+                    className="ms-4 active"
+                    onClick={(e) => removeClassActive(e)}
+                    href="home"
+                  >
                     Home
-                  </Nav.Link>
+                  </a>
                 </Link>
                 <Link href="/portfolio">
-                  <Nav.Link className="ms-4" href="/portfolio">
+                  <Nav.Link
+                    className="ms-4"
+                    href="/portfolio"
+                    onClick={(e) => removeClassActive(e)}
+                  >
                     Portfolio
                   </Nav.Link>
                 </Link>
                 <Link href="about">
-                  <Nav.Link className="ms-4" href="about">
+                  <Nav.Link
+                    className="ms-4"
+                    href="about"
+                    onClick={(e) => removeClassActive(e)}
+                  >
                     About
                   </Nav.Link>
                 </Link>
                 <Link href="services">
-                  <Nav.Link className="ms-4" href="services">
+                  <Nav.Link
+                    className="ms-4"
+                    href="services"
+                    onClick={(e) => removeClassActive(e)}
+                  >
                     Services
                   </Nav.Link>
                 </Link>
                 <Link href="contacts">
-                  <Nav.Link className="ms-4" href="contacts">
+                  <Nav.Link
+                    className="ms-4"
+                    href="contacts"
+                    onClick={(e) => removeClassActive(e)}
+                  >
                     Contacts
                   </Nav.Link>
                 </Link>
@@ -104,11 +129,11 @@ export default function NavBar() {
                       <Nav.Link href="/portfolio">Portfolio</Nav.Link>
                     </Link>
                     <Link href="about">
-                      <Nav.Link href="about">
-                        About
-                      </Nav.Link>
+                      <Nav.Link href="about">About</Nav.Link>
                     </Link>
-                    <Nav.Link href="services">Services</Nav.Link>
+                    <Link href="services">
+                      <Nav.Link href="services">Services</Nav.Link>
+                    </Link>
                     <Nav.Link href="contacts">Contacts</Nav.Link>
                   </Nav>
                 </Offcanvas.Body>

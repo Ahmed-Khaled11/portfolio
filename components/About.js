@@ -29,7 +29,6 @@ export default function About() {
             data-aos="zoom-in"
           >
             <h2 className="fw-bold text-uppercase">hi i'm ahmed khaled</h2>
-
             <h4 className="fw-bold text-uppercase">i'm 23 years old</h4>
             <ul className="text-capitalize p-2">
               <li>developed Front-End websites</li>
