@@ -6,25 +6,33 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { MoonFill, Search, SunFill } from "react-bootstrap-icons";
-import Link from 'next/link'
+import Link from "next/link";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import React, { memo, useRef, useState } from "react";
 
 const NavBar = () => {
-  // close Off Canvas when click on item  
+  // close Off Canvas when click on item
   const offCanvasRef = useRef();
-  const closeOffCanvas = () => offCanvasRef.current.backdrop.click(); 
+  const closeOffCanvas = () => offCanvasRef.current.backdrop.click();
   // function to add CLASS 'dark' to body & change button dark to button light
+    const removeClassActive = (e) => {
+      const links = document.querySelectorAll(".navbar-nav a");
+      links.forEach((w) => w.classList.remove("active"));
+      e.target.classList.toggle("active");
+  };
+  
   const [isDark, setIsDark] = useState(false);
   const darkMode = (e) => {
-    // add class 'dark' to body 
+    // add class 'dark' to body
     document.body.className === ""
       ? (document.body.className = "dark")
       : (document.body.className = "");
-    
+
     // change button dark
     isDark ? setIsDark(false) : setIsDark(true);
   };
+  // function to rmove calss 'active' from nav items
+
   return (
     <>
       <Head>
@@ -139,15 +147,23 @@ const NavBar = () => {
                       </Nav.Link>
                     </Link>
                     <Link href="/portfolio">
-                      <Nav.Link href="/portfolio" onClick={closeOffCanvas}>Portfolio</Nav.Link>
+                      <Nav.Link href="/portfolio" onClick={closeOffCanvas}>
+                        Portfolio
+                      </Nav.Link>
                     </Link>
                     <Link href="about">
-                      <Nav.Link href="about" onClick={closeOffCanvas}>About</Nav.Link>
+                      <Nav.Link href="about" onClick={closeOffCanvas}>
+                        About
+                      </Nav.Link>
                     </Link>
                     <Link href="services">
-                      <Nav.Link href="services" onClick={closeOffCanvas}>Services</Nav.Link>
+                      <Nav.Link href="services" onClick={closeOffCanvas}>
+                        Services
+                      </Nav.Link>
                     </Link>
-                    <Nav.Link href="contacts" onClick={closeOffCanvas}>Contacts</Nav.Link>
+                    <Nav.Link href="contacts" onClick={closeOffCanvas}>
+                      Contacts
+                    </Nav.Link>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
@@ -157,7 +173,6 @@ const NavBar = () => {
       </>
     </>
   );
-}
-
+};
 
 export default memo(NavBar);
