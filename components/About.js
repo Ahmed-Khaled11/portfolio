@@ -62,26 +62,26 @@ export default function About() {
             Look what i can do
           </h2>
           <div className="row my-technology text-white p-4 d-flex justify-content-center align-items-center text-capitalize text-center">
-            <span className=" col-md-4 fw-bold my-4">
+            <span className="box p-4 mt-2 ms-0 ms-md-3 col-md-5">
               <div>
-                <span className="d-flex align-items-center my-3 ">
+                <span className="d-flex align-items-center ">
                   {" "}
                   <Image src={react} width="20" height="20" />
-                  <p className="m-0 ms-1">react</p>
+                  <p className="ms-2 align-items-center">react</p>
                 </span>
-                <span className="d-flex align-items-center my-3">
+                <span className="d-flex align-items-center">
                   {" "}
                   <Image src={next} width="17" height="17" />
-                  <p className="m-0 ms-1">next.js</p>
+                  <p className="ms-2 align-items-center">next.js</p>
                 </span>
-                <span className="d-flex align-items-center my-3">
+                <span className="d-flex align-items-center ">
                   {" "}
                   <Image src={js} width="20" height="20" />
-                  <p className="m-0 ms-1">javascript</p>
+                  <p className="ms-2 align-items-center">javascript</p>
                 </span>
               </div>
             </span>
-            <span className=" col-md-4 ">
+            <span className="box p-4 mt-2 ms-0 ms-md-3 col-md-5">
               <div className="d-flex flex-row">
                 <Award className=" fs-3 fw-bolder" />
                 <p>Front-End Developer </p>
@@ -95,7 +95,7 @@ export default function About() {
                 <p>SEO</p>
               </div>
             </span>
-            <span className=" col-md-4 ">
+            <span className="box p-4 mt-2 mt-md-2 ms-0 ms-md-3 col-md-5">
               <div className="d-flex flex-row">
                 <Award className=" fs-3 fw-bolder" />
                 <p>Arabic / English</p>
@@ -106,7 +106,7 @@ export default function About() {
               </div>
               <div className="d-flex flex-row">
                 <Award className=" fs-3 fw-bolder" />
-                <p>web developer / web design</p>
+                <p>web developer</p>
               </div>
             </span>
           </div>

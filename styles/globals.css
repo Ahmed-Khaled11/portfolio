@@ -96,6 +96,10 @@
   .dark .about .text{
   background-color: #7b1111 !important;
   }
+  .dark .about .skills .box {
+      background-color: #282d30;
+      color:#fff;
+    }
   /* dark mode for about  */
   /* dark mode  */
   /* navbar */
@@ -367,8 +371,15 @@
   .about .img img{
   border-radius: 50%;
   }
-  .about .skills .my-technology{
-    background-color: #9c1515;
+  .about .skills .box{
+    background-color: #fff;
+    color: var(--dark-mode);
     border-radius: 14px;
+  }
+  .about .skills .box svg{
+color:var(--main-color);
+  }
+  .about .skills .my-technology p{
+white-space: nowrap;
   }
   /* About me  */
