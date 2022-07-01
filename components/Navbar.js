@@ -5,20 +5,29 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { MoonFill, Search } from "react-bootstrap-icons";
+import { MoonFill, Search, SunFill } from "react-bootstrap-icons";
 import Link from 'next/link'
 import { Container, Nav, Navbar, NavItem } from "react-bootstrap";
-import React, { memo } from "react";
+import React, { memo, useState } from "react";
 
-const darkMode = (e) => {
-  document.body.className === '' ? document.body.className = 'dark' : document.body.className = ""
-}
- const NavBar = () => {
+const NavBar = () => {
+  const [isDark, setIsDark] = useState(false);
+  // function to add CLASS 'dark' to body & change button dark to button light
+
+  const darkMode = (e) => {
+    document.body.className === ""
+      ? (document.body.className = "dark")
+      : (document.body.className = "");
+    // change button dark
+    isDark ? setIsDark(false) : setIsDark(true);
+  };
+
+  // function to rmove calss 'active' from nav items
   const removeClassActive = (e) => {
     const links = document.querySelectorAll(".navbar-nav a");
     links.forEach((w) => w.classList.remove("active"));
-    e.target.classList.toggle('active')
-  }
+    e.target.classList.toggle("active");
+  };
   return (
     <>
       <Head>
@@ -91,7 +100,7 @@ const darkMode = (e) => {
                   className="bg-transparent border-0 mx-2"
                   onClick={(e) => darkMode(e)}
                 >
-                  <MoonFill className="dark" />
+                  {isDark ? <SunFill className="text-white fs-5"/> : <MoonFill />}
                 </button>
 
                 <Navbar.Toggle

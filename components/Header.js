@@ -34,7 +34,7 @@ import Aos from 'aos'
               </h1>
               <br />
               <h3 className="mb-3">
-                i am an <span>front-end</span> web developer
+                <span>front-end</span> web developer
               </h3>
               <p className="fs-5">
                 i'm 23 years old ,the technology i use :

@@ -5,7 +5,10 @@ import React, { useEffect } from 'react'
 import { Container } from 'react-bootstrap';
 import aboutImg from '../public/images/about.jpg'
 import Aos from "aos";
-
+import { Award } from "react-bootstrap-icons";
+import react from '../public/images/react.png'
+import next from '../public/images/next.svg'
+import js from '../public/images/js.png'
 export default function About() {
     useEffect(() => {
       Aos.init({ duration: 1500 });
@@ -30,7 +33,7 @@ export default function About() {
           >
             <h2 className="fw-bold text-uppercase">hi i'm ahmed khaled</h2>
             <h4 className="fw-bold text-capitalize">
-              i'm 23 years old <br /> i'm from giza, egypt <br />
+              23 years old <br /> i'm from giza, egypt <br />
               email:
               <br />{" "}
               <span className="fs-5 fw-normal">ahmedboboos4@gmail.com</span>
@@ -54,6 +57,60 @@ export default function About() {
             <Image src={aboutImg} />
           </div>
         </Container>
+        <div className="skills container py-4">
+          <h2 className="text-uppercase text-center fw-bold mt-1 ms-md-4">
+            Look what i can do
+          </h2>
+          <div className="row my-technology text-white p-4 d-flex justify-content-center align-items-center text-capitalize text-center">
+            <span className=" col-md-4 fw-bold my-4">
+              <div>
+                <span className="d-flex align-items-center my-3 ">
+                  {" "}
+                  <Image src={react} width="20" height="20" />
+                  <p className="m-0 ms-1">react</p>
+                </span>
+                <span className="d-flex align-items-center my-3">
+                  {" "}
+                  <Image src={next} width="17" height="17" />
+                  <p className="m-0 ms-1">next.js</p>
+                </span>
+                <span className="d-flex align-items-center my-3">
+                  {" "}
+                  <Image src={js} width="20" height="20" />
+                  <p className="m-0 ms-1">javascript</p>
+                </span>
+              </div>
+            </span>
+            <span className=" col-md-4 ">
+              <div className="d-flex flex-row">
+                <Award className=" fs-3 fw-bolder" />
+                <p>Front-End Developer </p>
+              </div>
+              <div className="d-flex flex-row">
+                <Award className=" fs-3 fw-bolder" />
+                <p>HTML/Css/Javascript</p>
+              </div>
+              <div className="d-flex flex-row">
+                <Award className=" fs-3 fw-bolder" />
+                <p>SEO</p>
+              </div>
+            </span>
+            <span className=" col-md-4 ">
+              <div className="d-flex flex-row">
+                <Award className=" fs-3 fw-bolder" />
+                <p>Arabic / English</p>
+              </div>
+              <div className="d-flex flex-row">
+                <Award className=" fs-3 fw-bolder" />
+                <p>social media marketing</p>
+              </div>
+              <div className="d-flex flex-row">
+                <Award className=" fs-3 fw-bolder" />
+                <p>web developer / web design</p>
+              </div>
+            </span>
+          </div>
+        </div>
       </section>
     </div>
   );
