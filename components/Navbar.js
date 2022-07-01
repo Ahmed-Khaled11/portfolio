@@ -13,8 +13,7 @@ import React, { memo, useRef, useState } from "react";
 const NavBar = () => {
   // close Off Canvas when click on item  
   const offCanvasRef = useRef();
-  const closeOffCanvas = () => offCanvasRef.current.backdrop.click();
-
+  const closeOffCanvas = () => offCanvasRef.current.backdrop.click(); 
   // function to add CLASS 'dark' to body & change button dark to button light
   const [isDark, setIsDark] = useState(false);
   const darkMode = (e) => {
