@@ -7,28 +7,24 @@ import Form from "react-bootstrap/Form";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { MoonFill, Search, SunFill } from "react-bootstrap-icons";
 import Link from 'next/link'
-import { Container, Nav, Navbar, NavItem } from "react-bootstrap";
-import React, { memo, useEffect, useState } from "react";
+import { Container, Nav, Navbar } from "react-bootstrap";
+import React, { memo, useRef, useState } from "react";
 
 const NavBar = () => {
-  const [isDark, setIsDark] = useState(false);
-  // function to add CLASS 'dark' to body & change button dark to button light
+  // close Off Canvas when click on item  
+  const offCanvasRef = useRef();
+  const closeOffCanvas = () => offCanvasRef.current.backdrop.click();
 
+  // function to add CLASS 'dark' to body & change button dark to button light
+  const [isDark, setIsDark] = useState(false);
   const darkMode = (e) => {
+    // add class 'dark' to body 
     document.body.className === ""
       ? (document.body.className = "dark")
       : (document.body.className = "");
+    
     // change button dark
     isDark ? setIsDark(false) : setIsDark(true);
-  };
-
-  const removeOffcanavs = () => {
-    const offcanvasBackdrop = document.querySelector(".offcanvas");
-    const fade = document.querySelector(".fade");
-    offcanvasBackdrop.classList.remove('show')
-    fade.classList.remove("show");
-    // fade.style.css;
-
   };
   return (
     <>
@@ -117,6 +113,7 @@ const NavBar = () => {
                 id={`offcanvasNavbar-expand-${expand}`}
                 aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                 placement="end"
+                ref={offCanvasRef}
               >
                 <Offcanvas.Header closeButton></Offcanvas.Header>
                 <Container>
@@ -138,20 +135,20 @@ const NavBar = () => {
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3 text-uppercase">
                     <Link href="home">
-                      <Nav.Link href="home">Home</Nav.Link>
-                    </Link>
-                    <Link href="/portfolio">
-                      <Nav.Link href="/portfolio">
-                        Portfolio
+                      <Nav.Link href="home" onClick={closeOffCanvas}>
+                        Home
                       </Nav.Link>
                     </Link>
+                    <Link href="/portfolio">
+                      <Nav.Link href="/portfolio" onClick={closeOffCanvas}>Portfolio</Nav.Link>
+                    </Link>
                     <Link href="about">
-                      <Nav.Link href="about">About</Nav.Link>
+                      <Nav.Link href="about" onClick={closeOffCanvas}>About</Nav.Link>
                     </Link>
                     <Link href="services">
-                      <Nav.Link href="services">Services</Nav.Link>
+                      <Nav.Link href="services" onClick={closeOffCanvas}>Services</Nav.Link>
                     </Link>
-                    <Nav.Link href="contacts">Contacts</Nav.Link>
+                    <Nav.Link href="contacts" onClick={closeOffCanvas}>Contacts</Nav.Link>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
@@ -162,4 +159,6 @@ const NavBar = () => {
     </>
   );
 }
+
+
 export default memo(NavBar);
