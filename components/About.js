@@ -13,6 +13,9 @@ export default function About() {
     useEffect(() => {
       Aos.init({ duration: 1500 });
     }, []);
+  
+  
+
   return (
     <div>
       <Head>
@@ -64,20 +67,20 @@ export default function About() {
           <div className="row my-technology text-white p-4 d-flex justify-content-center align-items-center text-capitalize text-center">
             <span className="box p-4 mt-2 ms-0 ms-md-3 col-md-5">
               <div>
-                <span className="d-flex align-items-center ">
+                <span className="d-flex align-items-center mt-1">
                   {" "}
                   <Image src={react} width="20" height="20" />
-                  <p className="ms-2 align-items-center">react</p>
+                  <p className="ms-2 my-0 align-items-center">react</p>
                 </span>
-                <span className="d-flex align-items-center">
+                <span className="d-flex align-items-center my-3">
                   {" "}
                   <Image src={next} width="17" height="17" />
-                  <p className="ms-2 align-items-center">next.js</p>
+                  <p className="ms-2 my-0 align-items-center">next.js</p>
                 </span>
-                <span className="d-flex align-items-center ">
+                <span className="d-flex align-items-center mt-3 mb-2">
                   {" "}
                   <Image src={js} width="20" height="20" />
-                  <p className="ms-2 align-items-center">javascript</p>
+                  <p className="ms-2 my-0 align-items-center">javascript</p>
                 </span>
               </div>
             </span>

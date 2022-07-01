@@ -8,7 +8,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import { MoonFill, Search, SunFill } from "react-bootstrap-icons";
 import Link from 'next/link'
 import { Container, Nav, Navbar, NavItem } from "react-bootstrap";
-import React, { memo, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 
 const NavBar = () => {
   const [isDark, setIsDark] = useState(false);
@@ -22,11 +22,13 @@ const NavBar = () => {
     isDark ? setIsDark(false) : setIsDark(true);
   };
 
-  // function to rmove calss 'active' from nav items
-  const removeClassActive = (e) => {
-    const links = document.querySelectorAll(".navbar-nav a");
-    links.forEach((w) => w.classList.remove("active"));
-    e.target.classList.toggle("active");
+  const removeOffcanavs = () => {
+    const offcanvasBackdrop = document.querySelector(".offcanvas");
+    const fade = document.querySelector(".fade");
+    offcanvasBackdrop.classList.remove('show')
+    fade.classList.remove("show");
+    // fade.style.css;
+
   };
   return (
     <>
@@ -100,7 +102,11 @@ const NavBar = () => {
                   className="bg-transparent border-0 mx-2"
                   onClick={(e) => darkMode(e)}
                 >
-                  {isDark ? <SunFill className="text-white fs-5"/> : <MoonFill />}
+                  {isDark ? (
+                    <SunFill className="text-white fs-5" />
+                  ) : (
+                    <MoonFill />
+                  )}
                 </button>
 
                 <Navbar.Toggle
@@ -135,7 +141,9 @@ const NavBar = () => {
                       <Nav.Link href="home">Home</Nav.Link>
                     </Link>
                     <Link href="/portfolio">
-                      <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+                      <Nav.Link href="/portfolio">
+                        Portfolio
+                      </Nav.Link>
                     </Link>
                     <Link href="about">
                       <Nav.Link href="about">About</Nav.Link>

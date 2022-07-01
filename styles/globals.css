@@ -307,15 +307,15 @@
   position: absolute;
   background-color:var(--main-color);
   font-size: 16px;
-  transform: rotate(-35deg);
-  top: 25px;
-  left: -30%;
+  top: -25px;
+  /* left: -30%; */
   opacity: 0;
   border-radius: px;
   transition: 0.6s;
   }
   .portfolio .box:hover .theTitle{
-
+    top: 0;
+    left: 0;
   opacity: 1;
   }
   .portfolio .box .title{
