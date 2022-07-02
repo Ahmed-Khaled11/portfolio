@@ -16,7 +16,7 @@ import Aos from 'aos'
   export default function Header() {
     useEffect(() => {
     Aos.init({duration:1500});
-  }, [])
+    }, [])
   return (
     <>
       <header className="d-flex justify-content-center align-items-center">
@@ -29,7 +29,7 @@ import Aos from 'aos'
             data-aos="fade-right"
           >
             <div className="text text-uppercase">
-              <h1 className="mb-4">
+              <h1 className="mb-4" >
                 hi! i'm <span>ahmed</span>
               </h1>
               <br />
@@ -60,8 +60,6 @@ import Aos from 'aos'
                     download cv <Clock className="fs-3 ps-1" />
                   </Nav.Link>
                 </Link>
-
-
               </div>
               <div className="icons d-flex justify-content-between justify-content-md-start">
                 <Nav.Link

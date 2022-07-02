@@ -5,19 +5,42 @@ import React, { useRef } from "react";
 import { Button, Container, Form } from 'react-bootstrap'
 import { Envelope, Messenger, Whatsapp } from "react-bootstrap-icons";
 import emailjs from 'emailjs-com'
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function Contact() {
-    const form = useRef();
-      const sendEmail = (e) => {
-        e.preventDefault();
 
-        emailjs
-          .sendForm(
+
+    const form = useRef();
+    const sendEmail = (e) => {
+
+            e.preventDefault();
+            emailjs
+            .sendForm(
             "service_q409abd",
             "template_cafd47k",
             form.current,
             "gn-_qIeHcwk9Q4clD"
         )
-            e.target.reset();
+        
+            
+        .then(
+            (result) => {
+                toast.success(`Message Sent Successfully`, {
+                position: "bottom-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
+        },
+        (error) => {
+            console.log(error.text);
+        }
+        );
+
+        e.target.reset();
       };
 
     return (
@@ -34,6 +57,7 @@ export default function Contact() {
               contact me
             </h2>
           </div>
+
           <Container className="d-md-flex justify-content-between">
             <div className="social col-md-5 d-flex flex-column text-center mt-4">
               <article className="contact_option p-4 mb-2 mb-md-3 ">
@@ -82,7 +106,8 @@ export default function Contact() {
                     placeholder="Your Name"
                     className="mb-1 mb-md-3 mt-4 mt-md-0"
                   />
-                  <Form.Control
+                                <Form.Control
+                    required
                     type="email"
                     name="email"
                     placeholder="Your email"
@@ -103,7 +128,8 @@ export default function Contact() {
                   onSubmit={sendEmail}
                 >
                   Submit
-                </Button>
+                            </Button>
+                            <ToastContainer />
               </Form>
             </div>
           </Container>
