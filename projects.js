@@ -42,7 +42,7 @@ export const projects = [
 
   {
     id: 6,
-    title: "challenge",
+    title: "Front-End challenge",
     img: "/images/challenge.webp",
     url: "https://ahmed-khaled11.github.io/FrontEndChallenge",
     technology: "game",
@@ -50,7 +50,7 @@ export const projects = [
   },
   {
     id: 7,
-    title: "memory",
+    title: "memory game",
     img: "/images/memory-game.webp",
     url: "https://ahmed-khaled11.github.io/Memory-Game",
     technology: "game",
@@ -58,7 +58,7 @@ export const projects = [
   },
   {
     id: 8,
-    title: "type speed",
+    title: "type speed test game",
     img: "/images/typing-speed-test-game.webp",
     url: "https://ahmed-khaled11.github.io/Typing-Speed-Test-Game-V3",
     technology: "game",
