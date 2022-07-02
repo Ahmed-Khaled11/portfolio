@@ -19,7 +19,7 @@ export default function About() {
   return (
     <div>
       <Head>
-        <title>About me</title>
+        <title>About Me</title>
         <meta name="description" content="About me" />
       </Head>
       <section className="about py-3 ">
@@ -62,7 +62,7 @@ export default function About() {
         </Container>
         <div className="skills container py-4">
           <h2 className="text-uppercase text-center fw-bold mt-1 ms-md-4">
-            Look what i can do
+            my experience
           </h2>
           <div className="row my-technology text-white p-4 d-flex justify-content-center align-items-center text-capitalize text-center">
             <span className="box p-4 mt-2 ms-0 ms-md-3 col-md-5">

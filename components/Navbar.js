@@ -74,6 +74,15 @@ const NavBar = () => {
                     Portfolio
                   </Nav.Link>
                 </Link>
+                <Link href="contact">
+                  <Nav.Link
+                    className="ms-4"
+                    href="contact"
+                    onClick={(e) => removeClassActive(e)}
+                  >
+                    Contact
+                  </Nav.Link>
+                </Link>
                 <Link href="about">
                   <Nav.Link
                     className="ms-4"
@@ -83,6 +92,7 @@ const NavBar = () => {
                     About
                   </Nav.Link>
                 </Link>
+
                 <Link href="services">
                   <Nav.Link
                     className="ms-4"
@@ -92,15 +102,7 @@ const NavBar = () => {
                     Services
                   </Nav.Link>
                 </Link>
-                <Link href="contacts">
-                  <Nav.Link
-                    className="ms-4"
-                    href="contacts"
-                    onClick={(e) => removeClassActive(e)}
-                  >
-                    Contacts
-                  </Nav.Link>
-                </Link>
+
                 <button
                   className="bg-transparent border-0 mx-2"
                   onClick={(e) => darkMode(e)}
@@ -151,6 +153,11 @@ const NavBar = () => {
                         Portfolio
                       </Nav.Link>
                     </Link>
+                    <Link href="contact">
+                      <Nav.Link href="contact" onClick={closeOffCanvas}>
+                        Contact
+                      </Nav.Link>
+                    </Link>
                     <Link href="about">
                       <Nav.Link href="about" onClick={closeOffCanvas}>
                         About
@@ -161,9 +168,6 @@ const NavBar = () => {
                         Services
                       </Nav.Link>
                     </Link>
-                    <Nav.Link href="contacts" onClick={closeOffCanvas}>
-                      Contacts
-                    </Nav.Link>
                   </Nav>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
