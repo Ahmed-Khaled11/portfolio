@@ -49,7 +49,7 @@ export default function About() {
             <p></p>
 
             <ul className="text-capitalize p-2">
-              <li>technology i using : </li>
+              <li>technology i use: </li>
               <li>redux-toolkit</li>
               <li>bootstrap</li>
               <li>react JS</li>
