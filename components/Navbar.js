@@ -143,8 +143,8 @@ const NavBar = () => {
                 </Container>
                 <Offcanvas.Body>
                   <Nav className="justify-content-end flex-grow-1 pe-3 text-uppercase">
-                    <Link href="home">
-                      <Nav.Link href="home" onClick={closeOffCanvas}>
+                    <Link href="/">
+                      <Nav.Link href="/" onClick={closeOffCanvas}>
                         Home
                       </Nav.Link>
                     </Link>

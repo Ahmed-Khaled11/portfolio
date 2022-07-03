@@ -1,13 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-no-target-blank */
 import Head from 'next/head';
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Button, Container, Form } from 'react-bootstrap'
 import { Envelope, Messenger, Whatsapp } from "react-bootstrap-icons";
 import emailjs from 'emailjs-com'
 import { ToastContainer, toast } from "react-toastify";
+import Aos from "aos";
 import "react-toastify/dist/ReactToastify.css";
 export default function Contact() {
+    useEffect(() => {
+      Aos.init({ duration: 1000 });
+    }, []);
 
 
     const form = useRef();
@@ -60,7 +64,10 @@ export default function Contact() {
 
           <Container className="d-md-flex justify-content-between">
             <div className="social col-md-5 d-flex flex-column text-center mt-4">
-              <article className="contact_option p-4 mb-2 mb-md-3 ">
+              <article
+                className="contact_option p-4 mb-2 mb-md-3 "
+                data-aos="fade-right"
+              >
                 <Envelope />
                 <h3>Email</h3>
                 <p>ahmedboboos4@gmail.com</p>
@@ -72,7 +79,10 @@ export default function Contact() {
                   Send A Messsage
                 </a>
               </article>
-              <article className="contact_option p-4 mt-2 mt-md-3">
+              <article
+                className="contact_option p-4 mt-2 mt-md-3"
+                data-aos="zoom-in"
+              >
                 <Messenger />
                 <h3>Messenger</h3>
                 <p>Ahmed Khaled</p>
@@ -84,7 +94,10 @@ export default function Contact() {
                   Send A Messsage
                 </a>
               </article>
-              <article className="contact_option p-4 mt-2 mt-md-3">
+              <article
+                className="contact_option p-4 mt-2 mt-md-3"
+                data-aos="fade-right"
+              >
                 <Whatsapp />
                 <h3>WhatsApp</h3>
                 <p>01156420479</p>
@@ -106,7 +119,7 @@ export default function Contact() {
                     placeholder="Your Name"
                     className="mb-1 mb-md-3 mt-4 mt-md-0"
                   />
-                                <Form.Control
+                  <Form.Control
                     required
                     type="email"
                     name="email"
@@ -128,8 +141,8 @@ export default function Contact() {
                   onSubmit={sendEmail}
                 >
                   Submit
-                            </Button>
-                            <ToastContainer />
+                </Button>
+                <ToastContainer />
               </Form>
             </div>
           </Container>

@@ -9,7 +9,7 @@ import {Eye} from "react-bootstrap-icons";
 import Aos from 'aos'
 export default function Portfolio() {
   useEffect(() => {
-    Aos.init({duration:1500});
+    Aos.init({duration:1000});
   }, [])
    const [proj, setProj] = useState(projects)
   const filterProjects = (e) => {

@@ -15,7 +15,7 @@ import Link from "next/link";
 import Aos from 'aos'
   export default function Header() {
     useEffect(() => {
-    Aos.init({duration:1500});
+    Aos.init({duration:1000});
     }, [])
   return (
     <>
