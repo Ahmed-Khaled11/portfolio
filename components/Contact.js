@@ -54,7 +54,7 @@ export default function Contact() {
           <meta name="description" content="contact me" />
           <link rel="icon" href="/public/images/icon.png" />
         </Head>
-        <section className="contact  py-4">
+        <section className="contact py-4">
           <div className="section-title text-center text-uppercase">
             <p className="fs-5">CREATIVE</p>
             <h2 className="d-flex justify-content-center align-items-center fs-1 fw-bold my-5">

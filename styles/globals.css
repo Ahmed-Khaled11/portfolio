@@ -168,9 +168,9 @@
   align-items: center;
   font-weight: 500;
   }
-      .links button {
-      margin-top: -3px;
-      }
+  .links button {
+  margin-top: -3px;
+  }
   .navbar-nav a:hover{
   color: var(--main-color) !important;
   }
@@ -190,7 +190,7 @@
   }
   @media (min-width:991px) {
 
-   .navbar-toggler {
+  .navbar-toggler {
   display: none !important;
   }
   }
@@ -369,17 +369,17 @@
   }
   .portfolio .box:hover .title{
   bottom:20%;
-}
-    .portfolio .box:hover .theTitle {
-        top: 0;
-        left: 0;
-        opacity: 1;
+  }
+  .portfolio .box:hover .theTitle {
+  top: 0;
+  left: 0;
+  opacity: 1;
   }
   .portfolio .box .title:hover{
   background-color: #d13945;
   }
   /* portfolio */
-    /* contace me  */
+  /* contace me  */
   .contact {
   min-height: calc(100vh - 89px);
   background-color: var(--section-color);
@@ -428,11 +428,11 @@
   color: var(--dark-mode) !important;
   border-radius: 14px;
   padding: 20px;
-}
-.about .text .about-me{
+  }
+  .about .text .about-me{
 
-      color: rgba(0, 0, 0, 0.75) !important;;
-}
+  color: rgba(0, 0, 0, 0.75) !important;;
+  }
   @media (max-width:991px) {
   .about .about-content {
   align-items: center ;
@@ -465,25 +465,25 @@
 
   /* footer  */
   footer{
-        background-color: #191d20;
-        font-size: 14px;
-}
-footer .copy-right{
+  background-color: #191d20;
+  font-size: 14px;
+  }
+  footer .copy-right{
   color: #eee;
-}
-footer .icons a:nth-child(1) svg {
-color: #4267B2 !important;
-}
-footer .icons a:nth-child(2) svg {
-color: #00acee !important;
-}
-footer .icons a:nth-child(3) svg {
-color: #0072b1 !important;
-}
-footer .icons a:nth-child(4) svg {
-color: #0072b1 !important;
-}
-footer .icons a:nth-child(5) svg {
-color: #C13584 !important;
-}
-/* footer  */
+  }
+  footer .icons a:nth-child(1) svg {
+  color: #4267B2 !important;
+  }
+  footer .icons a:nth-child(2) svg {
+  color: #00acee !important;
+  }
+  footer .icons a:nth-child(3) svg {
+  color: #0072b1 !important;
+  }
+  footer .icons a:nth-child(4) svg {
+  color: #0072b1 !important;
+  }
+  footer .icons a:nth-child(5) svg {
+  color: #C13584 !important;
+  }
+  /* footer  */

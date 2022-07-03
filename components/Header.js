@@ -17,6 +17,13 @@ import Aos from 'aos'
     useEffect(() => {
     Aos.init({duration:1000});
     }, [])
+
+    const portfolioActive = () => {;
+      const home = document.querySelectorAll('.links a')[0];
+      const portfolio = document.querySelectorAll('.links a')[1];
+      home.classList.remove('active');
+      portfolio.classList.add('active');
+    }
   return (
     <>
       <header className="d-flex justify-content-center align-items-center py-4">
@@ -25,11 +32,11 @@ import Aos from 'aos'
             className="d-flex justify-content-between align-items-center
           flex-column-reverse
           flex-md-row text-center
-           text-md-start"
+          text-md-start"
             data-aos="fade-right"
           >
             <div className="text text-uppercase">
-              <h1 className="mb-4" >
+              <h1 className="mb-4">
                 hi! i'm <span>ahmed</span>
               </h1>
               <br />
@@ -48,6 +55,7 @@ import Aos from 'aos'
                   <Nav.Link
                     className="btn btn-portfolio rounded text-nowrap d-flex align-items-center mb-3 text-white"
                     href="/portfolio"
+                    onClick={portfolioActive}
                   >
                     explore my portfolio <Globe className="fs-3 ps-1" />
                   </Nav.Link>
