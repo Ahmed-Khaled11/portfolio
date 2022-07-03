@@ -92,17 +92,6 @@ const NavBar = () => {
                     About
                   </Nav.Link>
                 </Link>
-
-                <Link href="services">
-                  <Nav.Link
-                    className="ms-4"
-                    href="services"
-                    onClick={(e) => removeClassActive(e)}
-                  >
-                    Services
-                  </Nav.Link>
-                </Link>
-
                 <button
                   className="bg-transparent border-0 mx-2"
                   onClick={(e) => darkMode(e)}
@@ -161,11 +150,6 @@ const NavBar = () => {
                     <Link href="about">
                       <Nav.Link href="about" onClick={closeOffCanvas}>
                         About
-                      </Nav.Link>
-                    </Link>
-                    <Link href="services">
-                      <Nav.Link href="services" onClick={closeOffCanvas}>
-                        Services
                       </Nav.Link>
                     </Link>
                   </Nav>

@@ -379,6 +379,44 @@
   background-color: #d13945;
   }
   /* portfolio */
+    /* contace me  */
+  .contact {
+  min-height: calc(100vh - 89px);
+  background-color: var(--section-color);
+  }
+  .contact .contact_option{
+  background-color: #fff;
+  border-radius: 14px;
+  transition: 0.3s;
+  }
+  .contact .contact_option:hover{
+  background-color: #eee ;
+  }
+  .contact .contact_option svg{
+  color: var(--main-color);
+  font-size: 22px;
+  }
+  .contact form input:first-of-type, 
+  .contact form textarea{
+  text-transform: capitalize;
+  }
+  .contact form input , .contact form textarea{
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #dbdbdb ;
+  resize: none;
+  background-color: transparent !important;
+  }
+  .contact form button:hover{
+  background-color: #c73b46 !important;
+  }
+  .contact form input:focus , .contact form textarea:focus{
+  border: 2px solid #dbdbdb !important;
+  outline: none;
+  }
+
+  /* contace me  */
   /* About me  */
 
   .about{
@@ -424,41 +462,28 @@
   white-space: nowrap;
   }
   /* About me  */
-  /* contace me  */
-  .contact {
-  min-height: calc(100vh - 89px);
-  background-color: var(--section-color);
-  }
-  .contact .contact_option{
-  background-color: #fff;
-  border-radius: 14px;
-  transition: 0.3s;
-  }
-  .contact .contact_option:hover{
-  background-color: #eee ;
-  }
-  .contact .contact_option svg{
-  color: var(--main-color);
-  font-size: 22px;
-  }
-  .contact form input:first-of-type, 
-  .contact form textarea{
-  text-transform: capitalize;
-  }
-  .contact form input , .contact form textarea{
-  width: 100%;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  border: 2px solid #dbdbdb ;
-  resize: none;
-  background-color: transparent !important;
-  }
-  .contact form button:hover{
-  background-color: #c73b46 !important;
-  }
-  .contact form input:focus , .contact form textarea:focus{
-  border: 2px solid #dbdbdb !important;
-  outline: none;
-  }
 
-  /* contace me  */
+  /* footer  */
+  footer{
+        background-color: #191d20;
+        font-size: 14px;
+}
+footer .copy-right{
+  color: #eee;
+}
+footer .icons a:nth-child(1) svg {
+color: #4267B2 !important;
+}
+footer .icons a:nth-child(2) svg {
+color: #00acee !important;
+}
+footer .icons a:nth-child(3) svg {
+color: #0072b1 !important;
+}
+footer .icons a:nth-child(4) svg {
+color: #0072b1 !important;
+}
+footer .icons a:nth-child(5) svg {
+color: #C13584 !important;
+}
+/* footer  */
