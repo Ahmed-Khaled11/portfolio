@@ -29,7 +29,7 @@ export default function Portfolio() {
         <meta name="description" content="My Portfolio Page" />
         <link rel="icon" href="/public/images/icon.png" />
       </Head>
-      <section className="portfolio py-5">
+      <section className="portfolio py-4">
         <Container>
           <div className="section-title text-center text-uppercase">
             <p className="fs-5">CREATIVE</p>

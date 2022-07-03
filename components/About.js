@@ -23,7 +23,7 @@ export default function About() {
         <title>About Me</title>
         <meta name="description" content="About me" />
       </Head>
-      <section className="about py-3 ">
+      <section className="about py-4 ">
         <div className="section-title text-center text-uppercase">
           <p className="fs-5 main-color">CREATIVE</p>
           <h2 className="d-flex justify-content-center align-items-center fs-1 fw-bold my-5">

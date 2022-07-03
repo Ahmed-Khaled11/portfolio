@@ -19,7 +19,7 @@ import Aos from 'aos'
     }, [])
   return (
     <>
-      <header className="d-flex justify-content-center align-items-center">
+      <header className="d-flex justify-content-center align-items-center py-4">
         <Container>
           <div
             className="d-flex justify-content-between align-items-center
