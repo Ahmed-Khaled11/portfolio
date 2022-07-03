@@ -31,6 +31,7 @@ export default function About() {
           </h2>
         </div>
         <Container className="d-flex about-content flex-column-reverse flex-lg-row">
+<<<<<<< HEAD
           <div className="text text-white col-md-6 lh-lg fs-5 fs-md-1 me-0 me-md-3">
             <h2 className="fw-bold text-uppercase main-color">
               hi i'm ahmed khaled
@@ -64,6 +65,33 @@ export default function About() {
                 01156420479
               </p>
             </div>
+=======
+          <div
+            className="text text-white col-md-6 lh-lg fs-5 fs-md-1"
+            data-aos="zoom-in"
+          >
+            <h2 className="fw-bold text-uppercase">hi i'm ahmed khaled</h2>
+            <h4 className="fw-bold text-capitalize">
+              23 years old <br /> i'm from giza, egypt <br />
+              email:
+              <br />{" "}
+              <span className="fs-5 fw-normal">ahmedboboos4@gmail.com</span>
+              <br />
+              phone number:
+              <br />
+              <span className="fs-5 fw-normal">01068386346</span>
+              <br />
+            </h4>
+            <p></p>
+
+            <ul className="text-capitalize p-2">
+              <li>technology i use: </li>
+              <li>redux-toolkit</li>
+              <li>bootstrap</li>
+              <li>react JS</li>
+              <li>next.js</li>
+            </ul>
+>>>>>>> 2062c1467cd5a22c4cb47d681ddf388f377c8155
           </div>
           <div className="img col-md-6  ms-0 ms-md-3" data-aos="fade-down">
             <Image src={aboutImg} width="450" height="450" />
