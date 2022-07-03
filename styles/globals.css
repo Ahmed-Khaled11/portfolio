@@ -470,6 +470,7 @@
   }
   footer .copy-right{
   color: #eee;
+<<<<<<< HEAD
   }
   footer .icons a:nth-child(1) svg {
   color: #4267B2 !important;
@@ -487,3 +488,19 @@
   color: #C13584 !important;
   }
   /* footer  */
+=======
+}
+footer .icons a:nth-child(1) svg {
+color: #4267B2 !important;
+}
+footer .icons a:nth-child(2) svg {
+color: #00acee !important;
+}
+footer .icons a:nth-child(3) svg {
+color: #0072b1 !important;
+}
+footer .icons a:nth-child(5) svg {
+color: #C13584 !important;
+}
+/* footer  */
+>>>>>>> 6e7040cb41e130368bcacc7a714838f04c898918

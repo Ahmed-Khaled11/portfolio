@@ -140,7 +140,7 @@ export default function Contact() {
                   className="bg-main border-0"
                   onSubmit={sendEmail}
                 >
-                  Submit
+                  Send
                 </Button>
                 <ToastContainer />
               </Form>
