@@ -3,7 +3,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import React, { useEffect } from 'react'
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import aboutImg from '../public/images/about.jpg'
 import Aos from "aos";
 import { Award, Person, GeoAlt, GenderMale,Bank, Envelope, Telephone } from "react-bootstrap-icons";
@@ -15,7 +15,7 @@ export default function About() {
       Aos.init({ duration: 1000 });
     }, []);
   
-  
+   
 
   return (
     <div>
@@ -30,44 +30,48 @@ export default function About() {
             About Me
           </h2>
         </div>
-        <Container className="d-flex about-content flex-column-reverse flex-lg-row">
-          <div className="text text-white col-md-6 lh-lg fs-5 fs-md-1 me-0 me-md-3">
-            <h2 className="fw-bold text-uppercase main-color">
-              hi i'm ahmed khaled
-            </h2>
-            <h3 className="fs-5 fw-bold main-color">- Front End Developer -</h3>
-            <p className="about-me fs-6 fw-normal ">
-              Junior Web Developer specializing in front end development.
-              Experienced with all stages of the development cycle for dynamic
-              web projects. Well-versed in numerous programming languages
-              including HTML5, CSS, JavaScript
-            </p>
-            <div className="fw-bold text-capitalize">
-              <p className="d-flex align-items-center mb-1 ">
-                <GeoAlt className="me-2 main-color" /> i'm from giza, egypt
+        <Container className="d-flex about-content flex-column-reverse flex-lg-row " >
+          <Row>
+            <div className="text text-white col-md-6 lh-lg fs-5 fs-md-1 me-0 ">
+              <h2 className="fw-bold text-uppercase main-color">
+                hi i'm ahmed khaled
+              </h2>
+              <h3 className="fs-5 fw-bold main-color">
+                - Front End Developer -
+              </h3>
+              <p className="about-me fs-6 fw-normal ">
+                Junior Web Developer specializing in front end development.
+                Experienced with all stages of the development cycle for dynamic
+                web projects. Well-versed in numerous programming languages
+                including HTML5, CSS, JavaScript
               </p>
-              <p className="d-flex align-items-center mb-1 ">
-                <Bank className="me-2 main-color" />
-                Faculty of Commerce
-              </p>
-              <p className="d-flex align-items-center mb-1 ">
-                <Person className="me-2 main-color" />
-                23 years old
-              </p>
-              <p className="d-flex align-items-center text-lowercase  mb-1">
-                <Envelope className="me-2 main-color" />
-                ahmedboboos4@gmail
-              </p>
-              <p className="d-flex align-items-center">
-                {" "}
-                <Telephone className="d-flex align-items-center me-2 main-color" />
-                01156420479
-              </p>
+              <div className="fw-bold text-capitalize">
+                <p className="d-flex align-items-center mb-1 ">
+                  <GeoAlt className="me-2 main-color" /> i'm from giza, egypt
+                </p>
+                <p className="d-flex align-items-center mb-1 ">
+                  <Bank className="me-2 main-color" />
+                  Faculty of Commerce
+                </p>
+                <p className="d-flex align-items-center mb-1 ">
+                  <Person className="me-2 main-color" />
+                  23 years old
+                </p>
+                <p className="d-flex align-items-center text-lowercase  mb-1">
+                  <Envelope className="me-2 main-color" />
+                  ahmedboboos4@gmail
+                </p>
+                <p className="d-flex align-items-center">
+                  {" "}
+                  <Telephone className="d-flex align-items-center me-2 main-color" />
+                  01156420479
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="img col-md-6  ms-0 ms-md-3" data-aos="fade-down">
-            <Image src={aboutImg} width="450" height="450" />
-          </div>
+            <div className="img col-md-6 d-flex justify-content-center align-items-center ms-0 " data-aos="fade-down">
+              <Image src={aboutImg} width="450" height="450" />
+            </div>
+          </Row>
         </Container>
         <div className="skills container py-4">
           <h2 className="text-uppercase text-center fw-bold mt-1 ms-md-4">

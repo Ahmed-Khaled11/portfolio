@@ -429,6 +429,16 @@
   border-radius: 14px;
   padding: 20px;
   }
+  @media (max-width:991px) {
+  .about .text {
+  width: 100%;
+  margin-top: 14px;
+  order: 1;
+  }
+  .about .img {
+  width: 100%;
+  }
+  }
   .about .text .about-me{
 
   color: rgba(0, 0, 0, 0.75) !important;;
