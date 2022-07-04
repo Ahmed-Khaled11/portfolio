@@ -12,7 +12,7 @@ export default function Footer() {
     <footer className="text-white p-3">
       <Container>
         <p className="copy-right text-center m-0">
-          &copy;2022 john doe - personal portfolio made with
+          &copy;2022 Ahmed Khaled - personal portfolio made with
           <HeartFill className="ms-1" style={{ color: "red" }} />
         </p>
       </Container>

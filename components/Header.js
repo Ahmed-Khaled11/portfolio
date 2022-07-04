@@ -46,7 +46,7 @@ export default function Header() {
           >
             <div className="text text-uppercase">
               <h1 className="mb-4">
-                hi! i'm <span>john doe</span>
+                hi! i'm <span>Ahmed</span>
               </h1>
               <br />
               <h3 className="mb-3">

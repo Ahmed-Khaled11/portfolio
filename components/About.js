@@ -40,7 +40,7 @@ export default function About() {
           <Row>
             <div className="text text-white col-md-6 lh-lg fs-5 fs-md-1 me-0 ">
               <h2 className="fw-bold text-uppercase main-color">
-                hi i'm john doe
+                hi i'm Ahmed Khaled
               </h2>
               <h3 className="fs-5 fw-bold main-color">
                 - Front End Developer -
@@ -53,7 +53,7 @@ export default function About() {
               </p>
               <div className="fw-bold text-capitalize">
                 <p className="d-flex align-items-center mb-1 ">
-                  <GeoAlt className="me-2 main-color" /> i'm from Liverpool, UK
+                  <GeoAlt className="me-2 main-color" /> i'm from Giza, Egypt
                 </p>
                 <p className="d-flex align-items-center mb-1 ">
                   <Bank className="me-2 main-color" />
@@ -65,12 +65,12 @@ export default function About() {
                 </p>
                 <p className="d-flex align-items-center text-lowercase  mb-1">
                   <Envelope className="me-2 main-color" />
-                  test@example.com
+                  ahmedboboos4@gmail
                 </p>
                 <p className="d-flex align-items-center">
                   {" "}
                   <Telephone className="d-flex align-items-center me-2 main-color" />
-                  +123-456-789
+                  01156420479
                 </p>
               </div>
             </div>

@@ -51,7 +51,7 @@ const NavBar = () => {
               <Link href="/">
                 <Nav.Link href="/">
                   <Navbar.Brand className="logo fs-3 fs-md-3 ">
-                    <span>J</span>ohn <span>d</span>oe
+                    <span>A</span>hmed <span>K</span>haled
                   </Navbar.Brand>
                 </Nav.Link>
               </Link>

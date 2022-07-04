@@ -76,7 +76,7 @@ export default function Contact() {
             >
               <Envelope />
               <h3>Email</h3>
-              <p>test@example.com</p>
+              <p>ahmedboboos4@gmail</p>
               <a
                 className="main-color"
                 href="mailto:ahmedboboos4@gmail.com"
@@ -91,7 +91,7 @@ export default function Contact() {
             >
               <Messenger />
               <h3>Messenger</h3>
-              <p>john doe</p>
+              <p>Ahmed Khaled</p>
               <a
                 className="main-color"
                 href="https://m.me/ahmed.khaled.2898"
@@ -106,7 +106,7 @@ export default function Contact() {
             >
               <Whatsapp />
               <h3>WhatsApp</h3>
-              <p>+123-456-789</p>
+              <p>01156420479</p>
               <a
                 className="main-color"
                 href="https://wa.me/2001156420479"
