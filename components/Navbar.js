@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unknown-property */
 import Head from "next/head";
-import Image from "next/image";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";

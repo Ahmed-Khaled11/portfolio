@@ -1,27 +1,36 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useEffect, useState } from 'react'
+
 import { Button, ButtonGroup, Container, Row } from 'react-bootstrap'
 import Head from "next/head";
 import { projects } from '../projects'; 
 import Image from 'next/image'
-import Link from "next/link";
 import { Nav } from "react-bootstrap";
 import {Eye} from "react-bootstrap-icons";
 import Aos from 'aos'
 export default function Portfolio() {
+  // start Animation
   useEffect(() => {
-    Aos.init({duration:1000});
-  }, [])
-   const [proj, setProj] = useState(projects)
+    Aos.init({ duration: 1000 });
+  }, []);
+  // end Animation
+  const [filterProject, setFilterProject] = useState(projects);
+  // filter the projects on click
   const filterProjects = (e) => {
-    setProj(projects.filter(
-      (project) => project.technology == e.target.dataset.filter
-    ))
-      e.target.dataset.filter === "all"? setProj(projects) : ''
+    setFilterProject(
+      projects.filter(
+        (project) => project.technology == e.target.dataset.filter
+      )
+    );
 
-    let activeElement = document.querySelectorAll('.all-projects button')
+    // if click all Button return all projects
+    e.target.dataset.filter === "all" ? setFilterProject(projects) : "";
+
+    // add class 'active' on click item in navbar
+    let activeElement = document.querySelectorAll(".all-projects button");
     activeElement.forEach((e) => e.classList.remove("active"));
-    e.target.classList.add('active')
-  }
+    e.target.classList.add("active");
+  };
   return (
     <>
       <Head>
@@ -76,7 +85,7 @@ export default function Portfolio() {
             </ButtonGroup>
           </div>
           <Row>
-            {proj.map(({ id, title, img, url, aos }) => (
+            {filterProject.map(({ id, title, img, url, aos }) => (
               <div key={id} data-aos={aos} className="col-md-3">
                 <div className="box my-2 d-flex justify-content-center align-items-center">
                   <Image src={img} width="350" height="350" className="w-100" />

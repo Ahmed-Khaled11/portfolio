@@ -1,21 +1,27 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head';
 import Image from 'next/image';
 import React, { useEffect } from 'react'
+// bootstrap Component
 import { Container, Row } from 'react-bootstrap';
+// your image 
 import personalImg from '../public/images/personal.webp'
+  // library for animation on scroll
 import Aos from "aos";
-import { Award, Person, GeoAlt, GenderMale,Bank, Envelope, Telephone } from "react-bootstrap-icons";
+// bootstrap  icons
+import { Award, Person, GeoAlt, Bank, Envelope, Telephone } from "react-bootstrap-icons";
+// 3 icons image 
 import react from '../public/images/react.png'
 import next from '../public/images/next.svg'
 import js from '../public/images/js.png'
 export default function About() {
-    useEffect(() => {
-      Aos.init({ duration: 1000 });
-    }, []);
-  
-   
+  // start Animation
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+  // end Animation
 
   return (
     <div>

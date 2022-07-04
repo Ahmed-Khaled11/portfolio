@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { Fragment, useEffect } from 'react'
+import React, { useEffect } from 'react'
+// bootstrap Component
 import { Container, Nav } from 'react-bootstrap'
+// bootstrap icons
 import {
   Facebook,
   Instagram,
@@ -9,21 +11,28 @@ import {
   Globe,
   Clock,
 } from "react-bootstrap-icons";
+
 import Image from "next/image";
+// your image 
 import personalImg from '../public/images/personal.webp'
 import Link from "next/link";
+// library for animation on scroll 
 import Aos from 'aos'
-  export default function Header() {
-    useEffect(() => {
-    Aos.init({duration:1000});
-    }, [])
+export default function Header() {
+  // start Animation
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+  // end Animation
+  // add class 'active' to portfolio navlink
+  
+  const portfolioActive = () => {
+    const home = document.querySelectorAll(".links a")[0];
+    const portfolio = document.querySelectorAll(".links a")[1];
+    home.classList.remove("active");
+    portfolio.classList.add("active");
+  };
 
-    const portfolioActive = () => {;
-      const home = document.querySelectorAll('.links a')[0];
-      const portfolio = document.querySelectorAll('.links a')[1];
-      home.classList.remove('active');
-      portfolio.classList.add('active');
-    }
   return (
     <>
       <header className="d-flex justify-content-center align-items-center py-4">
