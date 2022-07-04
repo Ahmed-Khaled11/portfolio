@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import React, { useEffect } from 'react'
 import { Container, Row } from 'react-bootstrap';
-import aboutImg from '../public/images/about.jpg'
+import personalImg from '../public/images/personal.webp'
 import Aos from "aos";
 import { Award, Person, GeoAlt, GenderMale,Bank, Envelope, Telephone } from "react-bootstrap-icons";
 import react from '../public/images/react.png'
@@ -20,7 +20,7 @@ export default function About() {
   return (
     <div>
       <Head>
-        <title>About Me</title>
+        <title>About</title>
         <meta name="description" content="About me" />
       </Head>
       <section className="about py-4 ">
@@ -30,11 +30,11 @@ export default function About() {
             About Me
           </h2>
         </div>
-        <Container className="d-flex about-content flex-column-reverse flex-lg-row " >
+        <Container className="d-flex about-content flex-column-reverse flex-lg-row ">
           <Row>
             <div className="text text-white col-md-6 lh-lg fs-5 fs-md-1 me-0 ">
               <h2 className="fw-bold text-uppercase main-color">
-                hi i'm ahmed khaled
+                hi i'm john doe
               </h2>
               <h3 className="fs-5 fw-bold main-color">
                 - Front End Developer -
@@ -47,7 +47,7 @@ export default function About() {
               </p>
               <div className="fw-bold text-capitalize">
                 <p className="d-flex align-items-center mb-1 ">
-                  <GeoAlt className="me-2 main-color" /> i'm from giza, egypt
+                  <GeoAlt className="me-2 main-color" /> i'm from Liverpool, UK
                 </p>
                 <p className="d-flex align-items-center mb-1 ">
                   <Bank className="me-2 main-color" />
@@ -59,23 +59,26 @@ export default function About() {
                 </p>
                 <p className="d-flex align-items-center text-lowercase  mb-1">
                   <Envelope className="me-2 main-color" />
-                  ahmedboboos4@gmail
+                  test@example.com
                 </p>
                 <p className="d-flex align-items-center">
                   {" "}
                   <Telephone className="d-flex align-items-center me-2 main-color" />
-                  01156420479
+                  +123-456-789
                 </p>
               </div>
             </div>
-            <div className="img col-md-6 d-flex justify-content-center align-items-center ms-0 " data-aos="fade-down">
-              <Image src={aboutImg} width="450" height="450" />
+            <div
+              className="img col-md-6 d-flex justify-content-center align-items-center ms-0 "
+              data-aos="fade-down"
+            >
+              <Image src={personalImg} width="450" height="450" />
             </div>
           </Row>
         </Container>
         <div className="skills container py-4">
           <h2 className="text-uppercase text-center fw-bold mt-1 ms-md-4">
-            technology i use
+            i'm good in
           </h2>
           <div className="row my-technology text-white p-4 d-flex justify-content-center align-items-center text-capitalize text-center">
             <span

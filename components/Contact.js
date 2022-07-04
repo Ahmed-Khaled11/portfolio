@@ -50,7 +50,7 @@ export default function Contact() {
     return (
       <>
         <Head>
-          <title>Contact Me</title>
+          <title>Contact</title>
           <meta name="description" content="contact me" />
           <link rel="icon" href="/public/images/icon.png" />
         </Head>
@@ -70,7 +70,7 @@ export default function Contact() {
               >
                 <Envelope />
                 <h3>Email</h3>
-                <p>ahmedboboos4@gmail.com</p>
+                <p>test@example.com</p>
                 <a
                   className="main-color"
                   href="mailto:ahmedboboos4@gmail.com"
@@ -85,7 +85,7 @@ export default function Contact() {
               >
                 <Messenger />
                 <h3>Messenger</h3>
-                <p>Ahmed Khaled</p>
+                <p>john doe</p>
                 <a
                   className="main-color"
                   href="https://m.me/ahmed.khaled.2898"
@@ -100,7 +100,7 @@ export default function Contact() {
               >
                 <Whatsapp />
                 <h3>WhatsApp</h3>
-                <p>01156420479</p>
+                <p>+123-456-789</p>
                 <a
                   className="main-color"
                   href="https://wa.me/2001156420479"

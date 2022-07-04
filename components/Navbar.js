@@ -52,7 +52,7 @@ const NavBar = () => {
               <Link href="/">
                 <Nav.Link href="/">
                   <Navbar.Brand className="logo fs-3 fs-md-3 ">
-                    <span>A</span>hmed <span>K</span>haled
+                    <span>J</span>ohn <span>d</span>oe
                   </Navbar.Brand>
                 </Nav.Link>
               </Link>

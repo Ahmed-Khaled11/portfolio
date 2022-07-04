@@ -10,7 +10,7 @@ import {
   Clock,
 } from "react-bootstrap-icons";
 import Image from "next/image";
-import header from '../public/images/about.jpg'
+import personalImg from '../public/images/personal.webp'
 import Link from "next/link";
 import Aos from 'aos'
   export default function Header() {
@@ -37,7 +37,7 @@ import Aos from 'aos'
           >
             <div className="text text-uppercase">
               <h1 className="mb-4">
-                hi! i'm <span>ahmed</span>
+                hi! i'm <span>john doe</span>
               </h1>
               <br />
               <h3 className="mb-3">
@@ -101,7 +101,7 @@ import Aos from 'aos'
               </div>
             </div>
             <Image
-              src={header}
+              src={personalImg}
               width="450"
               height="450"
               alt="header"
