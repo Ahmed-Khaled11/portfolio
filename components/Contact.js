@@ -65,7 +65,7 @@ export default function Contact() {
           <Container className="d-md-flex justify-content-between">
             <div className="social col-md-5 d-flex flex-column text-center mt-4">
               <article
-                className="contact_option p-4 mb-2 mb-md-3 "
+                className="contact_option p-4 mb-1 mb-md-2 "
                 data-aos="fade-right"
               >
                 <Envelope />
@@ -128,7 +128,7 @@ export default function Contact() {
                   />
                   <textarea
                     name="message"
-                    rows="7"
+                    rows="9"
                     placeholder="Your Message"
                     width="300"
                     height="150"
@@ -137,7 +137,7 @@ export default function Contact() {
                 <Button
                   variant="primary"
                   type="submit"
-                  className="bg-main border-0"
+                  className="bg-main border-0 mt-1"
                   onSubmit={sendEmail}
                 >
                   Send
