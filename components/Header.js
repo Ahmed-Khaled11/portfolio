@@ -10,6 +10,7 @@ import {
   Twitter,
   Globe,
   Clock,
+  Laptop,
 } from "react-bootstrap-icons";
 
 import Image from "next/image";

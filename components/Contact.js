@@ -22,8 +22,10 @@ export default function Contact() {
   // end Animation
   // emailjs for form contact
   const form = useRef();
+  const button = useRef()
   const sendEmail = (e) => {
     e.preventDefault();
+    button.current.classList.add("disabled");
     emailjs
       .sendForm(
         "service_q409abd",
@@ -31,11 +33,9 @@ export default function Contact() {
         form.current,
         "gn-_qIeHcwk9Q4clD"
       )
-
       .then(
         () => {
           // pop up message if message sent Successfully
-
           toast.success(`Message Sent Successfully`, {
             position: "bottom-right",
             autoClose: 3000,
@@ -45,6 +45,8 @@ export default function Contact() {
             draggable: true,
             progress: undefined,
           });
+    button.current.classList.remove("disabled");
+
         },
         (error) => {
           console.log(error.text);
@@ -145,6 +147,7 @@ export default function Contact() {
                 type="submit"
                 className="bg-main border-0 mt-1"
                 onSubmit={sendEmail}
+                ref={button}
               >
                 Send
               </Button>

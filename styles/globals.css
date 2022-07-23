@@ -23,6 +23,22 @@
   * {
   box-sizing: border-box;
   }
+  /* scrollbar style  */
+::-webkit-scrollbar{
+  width:10px ;
+ }
+ ::-webkit-scrollbar-track{
+  background-color: var(--dark-mode);
+  border-radius: 30px;
+ }
+ ::-webkit-scrollbar-thumb{
+  background-color: var(--section-color);
+  border-radius: 30px;
+ }
+    .dark::-webkit-scrollbar-track {
+      background-color: var(--dark-mode);
+    }
+    /* scrollbar style  */
   button , input, a{
   box-shadow: none !important;
   }
