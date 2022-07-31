@@ -57,7 +57,7 @@ export default function Header() {
                 i'm 23 years old ,the technology i use :
                 <br />
                 <span>
-                  Html, css, js, react , next.js , react-bootstrap{" "}
+                  Html, css, js, react , next.js, Redux-toolkit , react-bootstrap{" "}
                 </span>{" "}
               </p>
               <div className="d-flex align-items-center flex-column flex-md-row">
