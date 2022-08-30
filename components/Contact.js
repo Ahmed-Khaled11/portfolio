@@ -50,6 +50,8 @@ export default function Contact() {
         },
         (error) => {
           console.log(error.text);
+    button.current.classList.remove("disabled");
+
         }
       );
     e.target.reset();

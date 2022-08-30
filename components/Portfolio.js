@@ -88,11 +88,17 @@ export default function Portfolio() {
             {filterProject.map(({ id, title, img, url, aos }) => (
               <div key={id} data-aos={aos} className="col-md-3">
                 <div className="box my-2 d-flex justify-content-center align-items-center">
-                  <Image src={img} width="350" height="350" className="w-100" />
+                  <Image
+                    src={img}
+                    width="350"
+                    height="350"
+                    className="w-100"
+                  />
                   <p
                     className="theTitle text-uppercase w-100 text-center
                    py-1 px-3 text-white fw-bold"
                   >
+                    
                     {title}
                   </p>
                   <Nav.Link

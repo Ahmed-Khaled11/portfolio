@@ -15,8 +15,17 @@ export const projects = [
     technology: "next",
     aos: "zoom-in",
   },
+
   {
     id: 3,
+    title: "quraan player",
+    img: "/images/quraan-player.webp",
+    url: "https://quraan-player.vercel.app/",
+    technology: "next.js & fetch API",
+    aos: "fade-down",
+  },
+  {
+    id: 4,
     title: "bondi",
     img: "/images/bondi.webp",
     url: "https://ahmed-khaled11.github.io/Bondi",
@@ -24,7 +33,7 @@ export const projects = [
     aos: "fade-down",
   },
   {
-    id: 4,
+    id: 5,
     title: "cairo gym",
     img: "/images/cairo-gym.webp",
     url: "https://ahmed-khaled11.github.io/Templet-3",
@@ -32,7 +41,7 @@ export const projects = [
     aos: "zoom-in",
   },
   {
-    id: 5,
+    id: 6,
     title: "template",
     img: "/images/template.webp",
     url: "https://ahmed-khaled11.github.io/Project-4",
@@ -40,14 +49,6 @@ export const projects = [
     aos: "fade-up",
   },
 
-  {
-    id: 6,
-    title: "Front-End challenge",
-    img: "/images/challenge.webp",
-    url: "https://ahmed-khaled11.github.io/FrontEndChallenge",
-    technology: "game",
-    aos: "fade-up",
-  },
   {
     id: 7,
     title: "memory game",

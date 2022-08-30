@@ -358,7 +358,9 @@
   object-fit: cover;
   filter: blur(0x);
   transition: 0.6s;
-  }
+  border-radius: 50%;
+  object-fit: contain;
+}
   .portfolio .box:hover img{
   filter: blur(4px);
   }
@@ -368,12 +370,16 @@
   .portfolio .box .theTitle{
   position: absolute;
   background-color:var(--main-color);
-  font-size: 16px;
+  font-size: 12px;
   top: -25px;
   opacity: 0;
-  border-radius: px;
+  border-radius: 8px;
   transition: 0.6s;
-  }
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
 
   .portfolio .box .title{
   position: absolute;
@@ -384,7 +390,7 @@
   bottom: -100px ; 
   }
   .portfolio .box:hover .title{
-  bottom:20%;
+  bottom:25%;
   }
   .portfolio .box:hover .theTitle {
   top: 0;
