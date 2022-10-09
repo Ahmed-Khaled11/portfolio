@@ -9,7 +9,7 @@ import { Nav } from "react-bootstrap";
 import {Eye} from "react-bootstrap-icons";
 import Aos from 'aos'
 export default function Portfolio() {
-  // start Animation
+// start Animation
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -92,7 +92,7 @@ export default function Portfolio() {
                     src={img}
                     width="350"
                     height="350"
-                    className="w-100"
+                    className="w-100"  
                   />
                   <p
                     className="theTitle text-uppercase w-100 text-center

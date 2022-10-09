@@ -28,10 +28,10 @@ export default function Contact() {
     button.current.classList.add("disabled");
     emailjs
       .sendForm(
-        "service_q409abd",
-        "template_cafd47k",
+        "service_k43l6bq",
+        "template_usxoe54",
         form.current,
-        "gn-_qIeHcwk9Q4clD"
+        "4fLtkO678K6kvw4HI"
       )
       .then(
         () => {
@@ -45,13 +45,11 @@ export default function Contact() {
             draggable: true,
             progress: undefined,
           });
-    button.current.classList.remove("disabled");
-
+          button.current.classList.remove("disabled");
         },
         (error) => {
           console.log(error.text);
-    button.current.classList.remove("disabled");
-
+          button.current.classList.remove("disabled");
         }
       );
     e.target.reset();

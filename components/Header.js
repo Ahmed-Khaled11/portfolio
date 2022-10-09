@@ -10,15 +10,14 @@ import {
   Twitter,
   Globe,
   Clock,
-  Laptop,
 } from "react-bootstrap-icons";
-
 import Image from "next/image";
 // your image 
 import personalImg from '../public/images/personal.webp'
 import Link from "next/link";
 // library for animation on scroll 
 import Aos from 'aos'
+
 export default function Header() {
   // start Animation
   useEffect(() => {
@@ -26,14 +25,12 @@ export default function Header() {
   }, []);
   // end Animation
   // add class 'active' to portfolio navlink
-  
   const portfolioActive = () => {
     const home = document.querySelectorAll(".links a")[0];
     const portfolio = document.querySelectorAll(".links a")[1];
     home.classList.remove("active");
     portfolio.classList.add("active");
   };
-
   return (
     <>
       <header className="d-flex justify-content-center align-items-center py-4">
@@ -57,7 +54,8 @@ export default function Header() {
                 i'm 23 years old ,the technology i use :
                 <br />
                 <span>
-                  Html, css, js, react , next.js, Redux-toolkit , react-bootstrap{" "}
+                  Html, css, js, react , next.js, Redux-toolkit ,
+                  react-bootstrap{" "}
                 </span>{" "}
               </p>
               <div className="d-flex align-items-center flex-column flex-md-row">
@@ -120,7 +118,9 @@ export default function Header() {
             />
           </div>
         </Container>
+
       </header>
-    </>
-  );
-}
+      </>
+      );
+    }
+    
