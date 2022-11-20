@@ -30,7 +30,7 @@ export const projects = [
     img: "/images/budget-tracker.webp",
     url: "https://react-todo-list-murex-six.vercel.app",
     technology: "next.js & fetch API",
-    aos: "fade-zoom",
+    aos: "zoom-in",
   },
   {
     id: 5,
