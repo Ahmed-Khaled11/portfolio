@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Portfolio</title>
+        <title>Ahmed | Portfolio</title>
         <meta name="description" content="Porfolio Front-End Developer" />
         <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
