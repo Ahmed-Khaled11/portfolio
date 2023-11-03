@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 // bootstrap Component
-import { Container, Nav } from 'react-bootstrap'
+import { Container, Nav } from "react-bootstrap";
 // bootstrap icons
 import {
   Facebook,
@@ -12,11 +12,11 @@ import {
   Clock,
 } from "react-bootstrap-icons";
 import Image from "next/image";
-// your image 
-import personalImg from '../public/images/personal.webp'
+// your image
+import personalImg from "../public/images/personal.webp";
 import Link from "next/link";
-// library for animation on scroll 
-import Aos from 'aos'
+// library for animation on scroll
+import Aos from "aos";
 
 export default function Header() {
   // start Animation
@@ -51,7 +51,7 @@ export default function Header() {
                 <span>front-end</span> web developer
               </h3>
               <p className="fs-5">
-                i'm 23 years old ,the technology i use :
+                i'm 25 years old ,the technology i use :
                 <br />
                 <span>
                   Html, css, js, react , next.js, Redux-toolkit ,
@@ -87,7 +87,7 @@ export default function Header() {
                 </Nav.Link>
                 <Nav.Link
                   className="instagram ms-3 fs-4"
-                  href="https://www.instagram.com/ahmedkhaled7573"
+                  href="https://www.instagram.com/ahmed_khaled_01"
                   target="_blank"
                 >
                   <Instagram />
@@ -118,9 +118,7 @@ export default function Header() {
             />
           </div>
         </Container>
-
       </header>
-      </>
-      );
-    }
-    
+    </>
+  );
+}
