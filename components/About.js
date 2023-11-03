@@ -1,21 +1,28 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react/no-unescaped-entities */
-import Head from 'next/head';
-import Image from 'next/image';
-import React, { useEffect } from 'react'
+import Head from "next/head";
+import Image from "next/image";
+import React, { useEffect } from "react";
 // bootstrap Component
-import { Container, Row } from 'react-bootstrap';
-// your image 
-import personalImg from '../public/images/personal.webp'
-  // library for animation on scroll
+import { Container, Row } from "react-bootstrap";
+// your image
+import personalImg from "../public/images/personal.webp";
+// library for animation on scroll
 import Aos from "aos";
 // bootstrap  icons
-import { Award, Person, GeoAlt, Bank, Envelope, Telephone } from "react-bootstrap-icons";
-// 3 icons image 
-import react from '../public/images/react.png'
-import next from '../public/images/next.svg'
-import js from '../public/images/js.png'
+import {
+  Award,
+  Person,
+  GeoAlt,
+  Bank,
+  Envelope,
+  Telephone,
+} from "react-bootstrap-icons";
+// 3 icons image
+import react from "../public/images/react.png";
+import next from "../public/images/next.svg";
+import js from "../public/images/js.png";
 export default function About() {
   // start Animation
   useEffect(() => {
@@ -61,7 +68,7 @@ export default function About() {
                 </p>
                 <p className="d-flex align-items-center mb-1 ">
                   <Person className="me-2 main-color" />
-                  23 years old
+                  25 years old
                 </p>
                 <p className="d-flex align-items-center text-lowercase  mb-1">
                   <Envelope className="me-2 main-color" />
