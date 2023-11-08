@@ -35,7 +35,7 @@ const NavBar = () => {
   return (
     <>
       <Head>
-        <title>Portfolio</title>
+        <title>Ahmed Khaled</title>
         <meta name="description" content="Porfolio Front-End Developer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
