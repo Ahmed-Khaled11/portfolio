@@ -78,7 +78,7 @@ export default function Contact() {
             >
               <Envelope />
               <h3>Email</h3>
-              <p>ahmedboboos4@gmail</p>
+              <p>ahmed.khaled011564@gmail.com</p>
               <a
                 className="main-color"
                 href="mailto:ahmedboboos4@gmail.com"
