@@ -3,7 +3,7 @@ export const projects = [
     id: 1,
     title: "pizza town",
     img: "/images/pizza-clone.webp",
-    url: "https://pizza-clone.vercel.app",
+    url: "https://pizza-twon.vercel.app/",
     technology: "next",
     aos: "fade-down",
   },
