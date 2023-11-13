@@ -71,7 +71,8 @@ export default function Header() {
                 <Link href="/">
                   <Nav.Link
                     className="btn btn-cv rounded text-nowrap d-flex align-items-center ms-0 ms-md-3 mb-3 text-white"
-                    href="/"
+                    href="https://docs.google.com/document/d/1VYzTlSMYnWirvCjkHyvWDr7IlQR17Mf3o-3lz5cPmJY/edit?usp=sharing"
+                      target="_blank"
                   >
                     download cv <Clock className="fs-3 ps-1" />
                   </Nav.Link>
