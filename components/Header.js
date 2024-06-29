@@ -71,7 +71,7 @@ export default function Header() {
                 <Link href="/">
                   <Nav.Link
                     className="btn btn-cv rounded text-nowrap d-flex align-items-center ms-0 ms-md-3 mb-3 text-white"
-                    href="https://drive.google.com/file/d/1Ww3Vr0KhSztaSoRU0jEG0tFLBMqiihEy/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1XhsceTtGf4NfRU-h7v2k2X-oB1nq1266/view"
                       target="_blank"
                   >
                     download cv <Clock className="fs-3 ps-1" />
